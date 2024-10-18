@@ -8,7 +8,10 @@ We build our Atari implementation on top of [minGPT](https://github.com/karpathy
 Dependencies can be installed with the following command:
 
 ```
-conda env create -f conda_env.yml
+## conda env create -f conda_env.yml
+conda env create --prefix ./conda_env/ -f conda_env.yml
+
+conda install pytorch::pytorch torchvision torchaudio -c pytorch
 ```
 
 ## Downloading datasets

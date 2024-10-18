@@ -27,7 +27,27 @@ from torch.utils.data.dataloader import DataLoader
 logger = logging.getLogger(__name__)
 
 from mingpt.utils import sample
-import atari_py
+"""
+From Google AI.
+It looks like you might be trying to use atari-py with Python 3.11. However, atari-py is deprecated and no longer maintained.
+The recommended alternative is ale-py:
+
+Installation: 
+pip install ale-py
+
+Compatibility: 
+ale-py is fully backwards compatible with atari-py, so your existing code should work with minimal changes.
+
+Features:
+ale-py offers several improvements over atari-py, including:
+Faster emulation
+Support for more games
+Better integration with Gymnasium (a fork of OpenAI Gym)
+
+"""
+
+
+import ale_py as atari_py
 from collections import deque
 import random
 import cv2

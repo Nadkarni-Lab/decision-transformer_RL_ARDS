@@ -1,20 +1,30 @@
 name: decision-transformer-atari
 channels:
 - pytorch
+- conda-forge
 dependencies:
-- python=3.7.9
-- pytorch=1.2
-- cudatoolkit=10.
+#- python=3.7.9
+- python=3.11.9
+#- pytorch=1.2
+#- cudatoolkit=10.
+- pytorch
+- torchvision
+- torchaudio
+#- tensorflow-gpu
+#- cudatoolkit
+#- cudnn
 - numpy
 - psutil
 - opencv
 - pip
 - pip:
-  - atari-py
+  #- atari-py
   - pyprind
-  - tensorflow-gpu>=1.13
+  #- tensorflow-gpu>=1.13
+  - tensorflow
   - absl-py
-  - atari-py
+  #- atari-py  ### this no-longer works  https://www.google.com/search?q=python+3.11+atari-py&oq=python+3.11+atari-py&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRigATIHCAUQIRigAdIBCDU1MThqMGo5qAIAsAIB&sourceid=chrome&ie=UTF-8
+  - ale-py
   - gin-config
   - gym
   - tqdm
